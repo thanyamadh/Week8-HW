@@ -28,7 +28,7 @@ struct Time subtract(struct Time &y ,struct Time &x)
   ans.h = y.h-x.h;
   ans.m = y.m-x.m;
   ans.s = y.s-x.s;
-  if(ans.m<0)
+  if(ans.m<0) //เช็คติดลบ
   {
     ans.h--;
     check=60;
@@ -40,7 +40,7 @@ struct Time subtract(struct Time &y ,struct Time &x)
     ans.m = check;
   }
   ans.s = y.s-x.s;
-  if(ans.s<0)
+  if(ans.s<0) //เช็คติดลบ
   {
     ans.m--;
     check=60;
